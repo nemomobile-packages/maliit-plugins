@@ -1,0 +1,3 @@
+[submodule "maliit-plugins"]
+	path = maliit-plugins
+	url = https://git.gitorious.org/maliit/maliit-plugins.git
