@@ -15,7 +15,6 @@ Group:      System/GUI/Other
 License:    LGPLv2.1
 URL:        http://gitorious.org/maliit/maliit-plugins
 Source0:    %{name}-%{version}.tar.bz2
-Source100:  maliit-plugins.yaml
 Requires:   qt5-qtdeclarative-import-qtquick2plugin
 Requires:   qt5-qtsvg-plugin-imageformat-svg
 BuildRequires:  pkgconfig(maliit-plugins)
