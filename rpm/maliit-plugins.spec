@@ -56,7 +56,7 @@ unset LD_AS_NEEDED
 # >> build pre
 # << build pre
 
-%qmake5 
+%qmake5 CONFIG+=disable-maliit-keyboard
 
 make %{?jobs:-j%jobs}
 
@@ -74,19 +74,10 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%{_bindir}/maliit-keyboard-benchmark
 %{_libdir}/maliit/plugins/nemo-keyboard.qml
 %{_datadir}/maliit/plugins/org/nemomobile
 # >> files
 # << files
-
-%files maliit-keyboard
-%defattr(-,root,root,-)
-%{_libdir}/maliit/plugins/libmaliit-keyboard-plugin.so
-%{_datadir}/maliit/plugins/org/maliit
-%{_datadir}/maliit/plugins/languages
-# >> files maliit-keyboard
-# << files maliit-keyboard
 
 %files doc
 %defattr(-,root,root,-)
